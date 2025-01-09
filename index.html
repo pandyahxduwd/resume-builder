@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Resume Builder Form</h2>
+        </div>
+        <div class="data">
+            <form id="frm" class="frm">
+                <!-- Personal Information -->
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" class="fullName" name="fullName" placeholder="(e.g.:John , John Mark)" required>
+                    <span class="eror" id="nameeror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="enter a Email " required>
+                    <span class="eror" id="emaileror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="enter a contect number" required>
+                    <span class="eror" id="phoneeror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn Profile:</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="enter your linkedin profile link">
+                    <span class="eror" id="linkedineror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="Gender">Gender:</label>
+                    <select id="gender" name="gender" value="gender">
+                        <option value="" selected>Select Gender</option>
+                        <option value="male">male</option>
+                        <option value="Female">female</option>
+                        <option value="Other">other</option>
+                    </select>
+                    <span class="eror" id="gendereror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                    <span class="eror" id="dobError"></span>
+                </div>
+                <!-- Education Details -->
+                <h3>Education Details</h3>
+                <div class="form-group">
+                    <label for="degree">Degree Name:</label>
+                    <input type="text" id="degree" name="degree" placeholder="which degree is achieve">
+                    <span class="eror" id="degreeeror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="institute">Institute Name:</label>
+                    <input type="text" id="institute" name="institute" placeholder="what is your institute name">
+                    <span class="eror" id="instituteeror"> </span> <br><br>
+                </div>
+                <!-- Work Experience -->
+                <h3>Work Experience</h3>
+                <div class="form-group">
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" placeholder="what is your company's name">
+                    <span class="eror" id="companyeror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" name="jobTitle" placeholder="what is your job title">
+                    <span class="eror" id="jobTitleeror"> </span> <br><br>
+                </div>
+                <div class="form-group">
+                    <label for="jobDescription">Job Description:</label>
+                    <textarea id="jobDescription" name="jobDescription" rows="2" cols="30   " placeholder="Describe your job responsibilities"></textarea>
+                    <span class="eror" id="jobDescriptionError"></span>
+                </div>
+                <!-- Hobbies -->
+                <h3>Hobbies & Interests</h3>
+                <div class="form-group">
+                    <label for="hobbies">Hobbies (comma-separated):</label>
+                    <textarea id="hobbies" placeholder="Enter hobbies, separated by commas"></textarea>
+                    <span class="eror" id="hobbiesError"></span>
+                </div>
+
+                <button type="submit" id="btn" class="btn">Submit</button>
+            </form>
+            <hr>
+            <div id="displayData" class="displayData"></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
